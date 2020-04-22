@@ -827,6 +827,12 @@ Layout/SpaceInsideStringInterpolation:
     - space
     - no_space
 
+Layout/SpaceInsideArrayLiteralBrackets:
+  EnforcedStyle: space
+  SupportedStyles:
+    - space
+    - no_space
+
 Style/SymbolArray:
   EnforcedStyle: percent
   SupportedStyles:
