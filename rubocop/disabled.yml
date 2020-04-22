@@ -45,7 +45,7 @@ NegatedIf:
   Enabled: false
 
 
-Layout/SpaceInsideBrackets:
+Layout/SpaceInsideArrayLiteralBrackets:
   Description: 'No spaces after [ or before ].'
   StyleGuide: 'https://github.com/bbatsov/ruby-style-guide#no-spaces-braces'
   Enabled: false
@@ -90,6 +90,10 @@ Security/JSONLoad:
   Enabled: false
 
 Lint/AmbiguousBlockAssociation:
+  Description: 'Does not exist in 0.42 ruleset.'
+  Enabled: false
+
+Naming/HeredocDelimiterNaming:
   Description: 'Does not exist in 0.42 ruleset.'
   Enabled: false
 
