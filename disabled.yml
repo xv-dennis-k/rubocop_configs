@@ -1,0 +1,96 @@
+# These are all the cops that are disabled in the default configuration.
+
+
+# Encoding:
+#   Description: 'Use UTF-8 as the source file encoding.'
+#   Enabled: false
+#
+# Documentation:
+#   Description: 'Document classes and non-namespace modules.'
+#   Enabled: false
+#
+# AndOr:
+#   Description: 'Use &&/|| instead of and/or.'
+#   Enabled: false
+#
+# TrailingComma:
+#   Description: 'Checks for trailing comma in parameter lists and literals.'
+#   Enabled: false
+#
+# # TODO: enable
+# SpaceInsideBlockBraces:
+#   Description: >-
+#                  Checks that block braces have or don't have surrounding space.
+#                  For blocks taking parameters, checks that the left brace has
+#                  or doesn't have trailing space.
+#   Enabled: true
+#
+# # TODO: enable after upgrade to rails 4
+# ActionFilter:
+#   Description: 'Enforces consistent use of action filter methods.'
+#   Enabled: false
+#
+# DoubleNegation:
+#   Description: 'Checks for uses of double negation (!!).'
+#   Enabled: false
+#
+# LineEndConcatenation:
+#   Description: 'Use \\ instead of + to concatenate two string literals at line end.'
+#   Enabled: false
+
+NegatedIf:
+  Description: >
+                 Favor unless over if for negative conditions
+                 (or control flow or).
+  Enabled: false
+
+
+Layout/SpaceInsideBrackets:
+  Description: 'No spaces after [ or before ].'
+  StyleGuide: 'https://github.com/bbatsov/ruby-style-guide#no-spaces-braces'
+  Enabled: false
+
+Layout/SpaceInsidePercentLiteralDelimiters:
+  Description: 'No unnecessary spaces inside delimiters of %i/%w/%x literals.'
+  Enabled: false
+
+######## START stuff that didn't exist in Rubocop 0.42
+###### TODO: fix the codebase to comply with new rules so these can be removed
+
+Layout/EmptyLineAfterMagicComment:
+  Description: 'Does not exist in 0.42 ruleset.'
+  Enabled: false
+
+Style/InverseMethods:
+  Description: 'Does not exist in 0.42 ruleset.'
+  Enabled: false
+
+Style/GuardClause:
+  Description: 'Does not exist in 0.42 ruleset.'
+  Enabled: false
+
+Style/SymbolArray:
+  Description: 'Disabled in 0.42 ruleset.'
+  Enabled: false
+
+Style/YodaCondition:
+  Description: 'Does not exist in 0.42 ruleset.'
+  Enabled: false
+
+Metrics/BlockLength:
+  Description: 'Does not exist in 0.42 ruleset.'
+  Enabled: false
+
+Style/EmptyMethod:
+  Description: 'Does not exist in 0.42 ruleset.'
+  Enabled: false
+
+Security/JSONLoad:
+  Description: 'Does not exist in 0.42 ruleset.'
+  Enabled: false
+
+Lint/AmbiguousBlockAssociation:
+  Description: 'Does not exist in 0.42 ruleset.'
+  Enabled: false
+
+######## END stuff that didn't exist in Rubocop 0.42
