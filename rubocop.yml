@@ -405,16 +405,6 @@ Layout/EmptyLinesAroundModuleBody:
     - empty_lines
     - no_empty_lines
 
-# Checks whether the source file has a utf-8 encoding comment or not
-# AutoCorrectEncodingComment must match the regex
-# /#.*coding\s?[:=]\s?(?:UTF|utf)-8/
-Style/Encoding:
-  EnforcedStyle: always
-  SupportedStyles:
-    - when_needed
-    - always
-  AutoCorrectEncodingComment: '# encoding: utf-8'
-
 Layout/ExtraSpacing:
   # When true, allows most uses of extra spacing if the intent is to align
   # things with the previous or next line, not counting empty lines or comment
@@ -505,8 +495,8 @@ Style/HashSyntax:
 # Force hashes that have a symbol value to use hash rockets
   UseHashRocketsWithSymbolValues: false
 
-Style/IfUnlessModifier:
-  MaxLineLength: 100
+Metrics/LineLength:
+  Max: 100
 
 Layout/IndentationConsistency:
   # The difference between `rails` and `normal` is that the `rails` style
@@ -925,8 +915,8 @@ Naming/VariableName:
     - snake_case
     - camelCase
 
-Style/WhileUntilModifier:
-  MaxLineLength: 100
+Metrics/LineLength:
+  Max: 100
 
 Style/WordArray:
   EnforcedStyle: percent
